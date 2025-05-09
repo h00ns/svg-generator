@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/icon-generator.js"]
+  "include": ["src", "src/svg-generator.js"]
 }
