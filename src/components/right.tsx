@@ -1,0 +1,44 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+
+const right = (
+  {
+    size = 24,
+    ...props
+  }: SVGProps<SVGSVGElement> & {
+    size?: number | string;
+  },
+  ref: Ref<SVGSVGElement>,
+) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="&#235;&#176;&#169;&#237;&#150;&#165;=Right">
+      <mask
+        id="mask0_537_6718"
+        style="maskType:alpha"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="24"
+        height="24"
+      >
+        <rect id="Bounding box" width="24" height="24" fill="#D9D9D9" />
+      </mask>
+      <g mask="url(#mask0_537_6718)">
+        <path
+          id="arrow_downward_alt"
+          d="M14.9 12.975L6.69999 12.975C6.41665 12.975 6.17915 12.8792 5.98749 12.6875C5.79582 12.4959 5.69999 12.2584 5.69999 11.975C5.69999 11.6917 5.79582 11.4542 5.98749 11.2625C6.17915 11.0709 6.41665 10.975 6.69999 10.975L14.9 10.975L12 8.07505C11.8167 7.89172 11.725 7.65838 11.725 7.37505C11.725 7.09171 11.8167 6.85838 12 6.67505C12.1833 6.49172 12.4167 6.40005 12.7 6.40005C12.9833 6.40005 13.2167 6.49172 13.4 6.67505L18 11.275C18.2 11.475 18.3 11.7084 18.3 11.975C18.3 12.2417 18.2 12.475 18 12.675L13.4 17.275C13.2167 17.4584 12.9833 17.55 12.7 17.55C12.4167 17.55 12.1833 17.4584 12 17.275C11.8167 17.0917 11.725 16.8584 11.725 16.575C11.725 16.2917 11.8167 16.0584 12 15.875L14.9 12.975Z"
+          fill="#171719"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+const ForwardRef = forwardRef(right);
+export default ForwardRef;
